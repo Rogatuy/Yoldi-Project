@@ -11,7 +11,10 @@ export default function RegistrationPage() {
       <main>
         <div className={styles.registrationPage}>
           <div className={styles.registrationWindow}>
-            <h2 className={styles.title}>Регистрация в Yoldi Agency</h2>
+            <h2 className={styles.title}>
+              Регистрация
+              <br /> в Yoldi Agency
+            </h2>
             <RegistrationForm />
           </div>
         </div>
