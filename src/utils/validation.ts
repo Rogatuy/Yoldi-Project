@@ -27,6 +27,10 @@ export const emailRules: ValidationRules = [
     rule: (value: string) => !/.+@.+\..+/i.test(value),
     text: "Введите корректный email",
   },
+  {
+    rule: (value: string) => value.length > 30,
+    text: "Email должен содержать максимум 30 символов",
+  },
 ];
 
 export const passwordRules: ValidationRules = [
@@ -42,8 +46,8 @@ export const slugRules: ValidationRules = [
     text: "Ссылка должна содержать минимум 3 символа",
   },
   {
-    rule: (value: string) => value.length > 20,
-    text: "Ссылка должна содержать максимум 20 символов",
+    rule: (value: string) => value.length > 30,
+    text: "Ссылка должна содержать максимум 30 символов",
   },
 ];
 

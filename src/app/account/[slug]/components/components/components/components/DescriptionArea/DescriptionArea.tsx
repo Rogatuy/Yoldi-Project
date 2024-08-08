@@ -18,7 +18,7 @@ export default function DescriptionArea({ value, error, disabled, onAreaChange }
   return (
     <div className={styles.descriptionAreaWrapper}>
       <p className={`${styles.counter} ${error ? styles.errorCounter : ""}`}>
-        {value.length} / {MAX_LENGTH_VALUE}
+        {(value && value.length) || 0} / {MAX_LENGTH_VALUE}
       </p>
       <p className={styles.descriptionAreaLabel}>Описание</p>
       <textarea
