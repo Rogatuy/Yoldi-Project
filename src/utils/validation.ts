@@ -53,7 +53,7 @@ export const slugRules: ValidationRules = [
 
 export const descriptionRules: ValidationRules = [
   {
-    rule: (value: string) => value.length > 1000,
+    rule: (value: string) => value && value.length > 1000,
     text: "Описание не может содержать более 1000 символов",
   },
 ];
