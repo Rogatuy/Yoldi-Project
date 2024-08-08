@@ -1,0 +1,32 @@
+.userBlock {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  width: max-content;
+
+  & p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25.6px;
+    color: #000000;
+  }
+}
+
+.userLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: rgba(243, 243, 243, 1);
+  border: 1px solid rgba(230, 230, 230, 1);
+
+  & span {
+    color: #000000;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 25.2px;
+    text-transform: uppercase;
+  }
+}

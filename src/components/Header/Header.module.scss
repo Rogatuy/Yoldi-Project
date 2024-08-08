@@ -1,0 +1,28 @@
+.header {
+  position: fixed;
+  width: 100%;
+  padding: 15px 29px 15px 20px;
+  height: 80px;
+  background-color: #ffffff;
+  border-bottom: 1px solid rgba(230, 230, 230, 1);
+  border-top: 1px solid rgba(230, 230, 230, 1);
+  z-index: 500;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.loadingProfile {
+  display: block;
+}
+
+.loadingText {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25.6px;
+  color: #000000;
+}

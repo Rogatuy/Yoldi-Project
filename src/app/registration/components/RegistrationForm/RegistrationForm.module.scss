@@ -1,0 +1,17 @@
+.registrationForm {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  width: 100%;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 0 5px;
+
+  @media screen and (max-width: 767px) {
+    padding: 0;
+  }
+}
