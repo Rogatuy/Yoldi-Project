@@ -94,7 +94,7 @@ export default function LoginForm() {
           text={isMutating ? "Загрузка..." : "Войти"}
           disabled={emailValue === "" || passwordValue === "" || isMutating}
         />
-        {!isMutating && data && "error" in data && <p style={{ color: "red" }}>{data.error}</p>}
+        {!isMutating && data && "message" in data && <p style={{ color: "red" }}>{data.message}</p>}
       </div>
     </form>
   );

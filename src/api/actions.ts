@@ -68,7 +68,8 @@ export const login = async (data: LoginData): Promise<LoginResponse | LoginError
     const responseData = await response.json();
     return responseData;
   } catch (error) {
-    return { error: "An unexpected error occurred" };
+    console.error("Failed to login:", error);
+    throw error;
   }
 };
 
@@ -90,7 +91,8 @@ export const signUp = async (data: SignUpData): Promise<SignUpResponse | SignUpE
     const responseData = await response.json();
     return responseData;
   } catch (error) {
-    return { error: "An unexpected error occurred" };
+    console.error("Failed to signUp:", error);
+    throw error;
   }
 };
 

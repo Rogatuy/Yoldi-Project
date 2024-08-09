@@ -17,6 +17,8 @@ export type LoginResponse = {
 };
 
 export type LoginError = {
+  statusCode?: string;
+  message?: string;
   error: string;
 };
 
@@ -31,7 +33,7 @@ export type SignUpResponse = {
 };
 
 export type SignUpError = {
-  error: string;
+  message: string;
 };
 
 export type UpdateProfileData = {
